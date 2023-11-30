@@ -1,21 +1,16 @@
 @charset "UTF-8";
 
 .brands {
-
     display: inline-block;
-    text-align: center;
-   
 }
 .brands img {
     height: 400px;
     width: 300px;
     object-fit: cover;
     margin-left: 5px;
-    text-align: center;
     justify-content: center;
     display: flex;
-    padding: 5px;
-    background-color: white;
-    
+    padding: 4px;
+ 
 
 }
