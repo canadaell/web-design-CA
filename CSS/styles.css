@@ -127,3 +127,7 @@ a{
 .row{
     display: flex;
 }
+
+footer{
+    text-align: center;
+}
