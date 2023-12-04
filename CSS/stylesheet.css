@@ -1,6 +1,13 @@
 @charset "UTF-8";
 
 
+/* Index Page Style*/
+
+
+#navbar a {
+    margin-right: 10px;
+}
+
 .brands {
     display: inline-block;
     text-align: center;
@@ -15,3 +22,9 @@
     padding: 4px;
     background-color: white;
 }
+
+.brands img:hover {
+    background-color:beige;
+
+}
+
