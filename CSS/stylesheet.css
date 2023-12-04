@@ -18,6 +18,13 @@
 
 /* Index Page Style*/
 
+#MainImage {
+    margin: auto;
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+    object-position: 0 75%;
+}
 
 .brands {
     display: inline-block;
