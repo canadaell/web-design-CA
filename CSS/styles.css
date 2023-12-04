@@ -101,3 +101,11 @@ select {
 }
 
 /* About us style */
+
+/*
+navigation bar
+*/
+.navigation{
+    height: 100px;
+    background-color: rgb(170, 233, 111);
+}
