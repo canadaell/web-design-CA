@@ -105,10 +105,7 @@ select {
 /*
 navigation bar
 */
-.navigation{
+.navi{
     height: 100px;
     background-color: rgb(170, 233, 111);
-}
-.navigation-hover{
-    
 }
