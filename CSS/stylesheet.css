@@ -7,7 +7,7 @@
 #navbar a {
     margin-right: 8px;
     text-align: center;
-    
+
 }
 
 #footer footer {
@@ -30,6 +30,7 @@
     display: inline-block;
     text-align: center;
 }
+
 .brands img {
     height: 300px;
     width: 200px;
@@ -42,7 +43,6 @@
 }
 
 .brands img:hover {
-    background-color:beige(255, 0, 187);
+    background-color: beige(255, 0, 187);
 
 }
-
