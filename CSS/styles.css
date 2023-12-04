@@ -106,6 +106,7 @@ select {
 navigation bar
 */
 .navi{
+    text-align: center;
     height: 100px;
     background-color: rgb(78, 82, 74);
     transition: transform 0.3s, background 0.3s;
@@ -114,4 +115,15 @@ navigation bar
 .navi:hover{
     background-color: rgb(100, 105, 95);
     transform: scale(1.1);
+}
+/*
+modify navigation bar's links and delete underline
+*/
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.row{
+    display: flex;
 }
