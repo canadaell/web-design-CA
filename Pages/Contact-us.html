@@ -109,14 +109,31 @@
               </tr>
             </tbody>
           </table>
-          <div id="map"></div>
+          <div id="map" style="height: 800px;"></div>
           <script>
             var map;
             function initMap() {
               map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 52.5200, lng: 13.4050},
+                center: {lat: 53.349805, lng: -6.26031},
                 zoom: 8
               });
+              var marker1 = new google.maps.Marker({
+                position: {lat: 53.349805, lng: -6.26031},
+                map: map,
+                title: 'Dublin'
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: {lat: 53.2707, lng: -9.0568},
+                map: map,
+                title: 'Galway'
+            });
+
+            var marker3 = new google.maps.Marker({
+                position: {lat: 51.8974, lng: -8.4706},
+                map: map,
+                title: 'Cork'
+            });
             }
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwgJ6FHhE334VqUSM5E9_U8e0PMbtlW8&callback=initMap"
