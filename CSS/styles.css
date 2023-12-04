@@ -1,0 +1,103 @@
+/* Buy car style */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-title {
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    max-height: 100%;
+    width: 600px;
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+h2 {
+    text-align: center;
+    margin-top: 0;
+}
+  
+.form-row {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5%; /* Consistent bottom margin for spacing */
+    gap: 2%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form-row label{
+    padding-left: 20%;
+    font-weight: bold;
+}
+  
+.gender-row {
+    display: flex;
+    margin-bottom: 10%;
+}  
+  
+.gender-row label {
+    padding-left: 2%;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.gender-row label[for="non-binary"] {
+    margin-left: 34%; /* Adjust this value as needed */
+}
+
+.gender-row label[for="prefer-not-to-say"] {
+    margin-left: 34%; /* Adjust this value as needed */
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Space after the radio button */
+}
+ 
+input[type="text"]{
+    width: 40%;
+}
+
+input[type="email"]{
+    width: 40%;
+}
+
+input[type="tel"]{
+    width: 30%;
+}
+
+select {
+    margin-bottom: 10px;
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 10px; /* Space after each input */
+}
+  
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.button-group input[type="submit"], .button-group input[type="reset"] {
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+  
+.button-group input[type="submit"]:hover, .button-group input[type="reset"]:hover {
+    background-color: #f2f2f2;
+}
+
+/* About us style */
