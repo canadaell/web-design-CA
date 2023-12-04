@@ -10,8 +10,7 @@
 
 }
 
-#footer footer {
-    font-size: small;
+#footer p {
     text-align: center;
     margin: 1%;
 }
@@ -19,11 +18,8 @@
 /* Index Page Style*/
 
 #MainImage {
-    margin: auto;
-    height: 300px;
-    width: 600px;
-    object-fit: cover;
-    object-position: 0 75%;
+    height: 0,3%;
+    width: 0,3%;
 }
 
 .brands {
@@ -40,6 +36,8 @@
     display: flex;
     padding: 4px;
     background-color: white;
+    text-align: center;
+    
 }
 
 .brands img:hover {
