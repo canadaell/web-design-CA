@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy car</title>
     <link rel="stylesheet" href="../CSS/styles.css">
     <script src="../../JS/script.js"></script>
-</head>
+  </head>
 
-<body>
-  
+  <body>
+
+    <header>
+      <!-- Displaying the header title with a clickable image on the left -->
+      <img src="../Images/logo.png" alt="Left Top Image" class="left-top-image" id="homeIcon">
+    </header>
+
+    <!-- JavaScript to handle the click event on the home icon -->
+    <script>
+      document.getElementById("homeIcon").addEventListener("click", function() {
+          var r = confirm("Do you want to return to the home page?");
+          if (r == true) {
+              window.location.href = "../index.html";
+          }
+      });
+    </script>
+
     <h1 class="form-title">Motor Legacy Ireland</h1>
     <a href="../index.html">Home Page</a>
     <a href="Cars.html">Cars</a>
@@ -78,16 +93,15 @@
           <input type="submit" value="Submit">
           <input type="reset" value="Reset">
         </div>
-        
+          
       </form>
-      
+        
     </div>
 
     <footer>
       <hr>
       <p> &#169; Copyright 2023. All Rights Reserved.</p>
-  </footer>
-
+    </footer>
 
   </body>
 

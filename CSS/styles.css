@@ -1,4 +1,20 @@
 /* Buy car style */
+
+.header-title {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    height: 30px; /* Fixed height for the title */
+}
+
+.left-top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Fixed width for the image */
+    height: auto; /* Height is set to auto to maintain aspect ratio */
+}
+
 body {
     font-family: Arial, sans-serif;
 }
