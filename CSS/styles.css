@@ -117,7 +117,26 @@ select {
 }
 
 /* About us style */
+.zaku-image {
+    max-width: 20%;
+}
 
+.zaku-image2:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+.zaku-image2 {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
 /*
 navigation bar
 */
