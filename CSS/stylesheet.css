@@ -35,7 +35,7 @@
 }
 
 .brands img:hover {
-    background-color:beige;
+    background-color:beige(255, 0, 187);
 
 }
 
