@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
 
-/* Index Page Style*/
 
+/* General Style*/
 
 #navbar a {
     margin-right: 10px;
+    
 }
+
+#footer footer {
+    font-size: small;
+    text-align: center;
+    margin: 1%;
+}
+
+/* Index Page Style*/
+
 
 .brands {
     display: inline-block;
