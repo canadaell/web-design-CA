@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy car</title>
+    <link rel="stylesheet" href="../web-design-CA/CSS/styles.css">
+    <script src="../web-design-CA/JS/script.js"></script>
 </head>
 
 <body>
-    <h1>Motor Legacy Ireland</h1>
+    <h1 class="form-title">Motor Legacy Ireland</h1>
     <a href="../index.html">Home Page</a>
     <a href="Page1.html">Cars</a>
     <a href="Page2.html">Buy car</a>
@@ -16,6 +18,70 @@
     <a href="Page4.html">Contact Us</a>
     <a href="Page5.html">Mini Game</a>
 
-</body>
+    <div class="form-section">
+
+      <h2>Application Form</h2>
+
+      <form id="registrationForm">
+
+        <div class="form-row">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-row">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-row">
+          <label for="gender">Gender:</label>
+
+          <div class="gender-row">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+
+        </div>
+
+        <div class="gender-row">
+          <label for="prefer-not-to-say"><input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say"> Prefer Not to Say</label>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="mobile">Mobile:</label>
+          <input type="tel" id="mobile" name="mobile" required>
+        </div>
+
+        <div class="form-row">
+          <label for="brand">Brand:</label>
+          <select id="brand" name="brand" required>
+            <option value="">Select brand</option>
+            <option value="brand1">Brand 1</option>
+            <option value="brand2">Brand 2</option>
+            <option value="brand3">Brand 3</option>
+          </select>          
+        </div>
+
+        <div class="form-row">
+            <label for="bio">Additional requirements:</label>
+            <textarea id="bio" name="bio" rows="4" required></textarea>
+        </div>
+
+        <div class="button-group">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+        
+      </form>
+      
+    </div>
+
+  </body>
 
 </html>
