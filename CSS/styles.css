@@ -122,6 +122,7 @@ select {
 navigation bar
 */
 .navi{
+    
     text-align: center;
     height: 100px;
     background-color: rgb(78, 82, 74);
@@ -135,12 +136,13 @@ navigation bar
 /*
 modify navigation bar's links and delete underline
 */
-a{
+.link{
     text-decoration: none;
     color: #ffffff;
 }
 
 .row{
+    align-items: center;
     display: flex;
 }
 
