@@ -136,7 +136,11 @@ select {
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+    margin-bottom: 1%; /* Adds some space below each container */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers the text */
 }
+
 /*
 navigation bar
 */
