@@ -48,7 +48,7 @@ h2 {
 .form-row {
     display: flex;
     text-align: center;
-    margin-bottom: 5%; /* Consistent bottom margin for spacing */
+    margin-bottom: 4%; /* Consistent bottom margin for spacing */
     gap: 2%;
     display: grid;
     grid-template-columns: 1fr 2fr;
