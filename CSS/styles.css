@@ -1,119 +1,79 @@
 /* Buy car style */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
 
-.header-title {
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
     position: relative;
-    margin: 0 auto;
-    text-align: center;
-    height: 30px; /* Fixed height for the title */
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
 }
 
-.left-top-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px; /* Fixed width for the image */
-    height: auto; /* Height is set to auto to maintain aspect ratio */
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.form-title {
-    text-align: center;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid black;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.form-section {
-    max-height: 100%;
-    width: 600px;
-    border: 3px solid black;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-  
-h2 {
-    text-align: center;
-    margin-top: 0;
-}
-  
-.form-row {
+.nav-scroller .nav {
     display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
     text-align: center;
-    margin-bottom: 4%; /* Consistent bottom margin for spacing */
-    gap: 2%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.form-row label{
-    padding-left: 20%;
-    font-weight: bold;
-}
-  
-.gender-row {
-    display: flex;
-    margin-bottom: 10%;
-}  
-  
-.gender-row label {
-    padding-left: 2%;
-    font-weight: normal;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
-.gender-row label[for="non-binary"] {
-    margin-left: 34%; /* Adjust this value as needed */
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
 }
 
-.gender-row label[for="prefer-not-to-say"] {
-    margin-left: 34%; /* Adjust this value as needed */
+.bd-mode-toggle {
+    z-index: 1500;
 }
 
-input[type="radio"] {
-    margin-right: 5px; /* Space after the radio button */
-}
- 
-input[type="text"]{
-    width: 40%;
-}
-
-input[type="email"]{
-    width: 40%;
-}
-
-input[type="tel"]{
-    width: 30%;
-}
-
-select {
-    margin-bottom: 10px;
-    width: 30%; /* Adjust width as needed */
-    margin-bottom: 10px; /* Space after each input */
-}
-  
-.button-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-  
-.button-group input[type="submit"], .button-group input[type="reset"] {
-    padding: 10px 15px;
-    cursor: pointer;
-    margin: 0 10px;
-}
-  
-.button-group input[type="submit"]:hover, .button-group input[type="reset"]:hover {
-    background-color: #f2f2f2;
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
 }
 
 /* About us style */
