@@ -38,6 +38,7 @@ navigation bar
     height: 100px;
     background-color: rgb(78, 82, 74);
     transition: transform 0.3s, background 0.3s;
+    padding: 35px 0;
 }
 
 .navi:hover {
@@ -61,3 +62,4 @@ modify navigation bar's links and delete underline
 footer {
     text-align: center;
 }
+
