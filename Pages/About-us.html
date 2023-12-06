@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <script src="../../JS/script.js"></script>
+    </head>
+  
+    <body>
 
-    
-    <link rel="stylesheet" href="../web-design-CA/CSS/styles.css">
-    <script src="../web-design-CA/JS/script.js"></script>
-</head>
-
-<body>
-    <div id="navbar">
-        <h1>Motor Legacy Ireland</h1>
+        <header>
+        <!-- Displaying the header title with a clickable image on the left -->
+        <img src="../Images/logo.png" alt="Left Top Image" class="left-top-image" id="homeIcon">
+        </header>
+        
+        <!-- JavaScript to handle the click event on the home icon -->
+        <script>
+            document.getElementById("homeIcon").addEventListener("click", function() {
+                var r = confirm("Do you want to return to the home page?");
+                if (r == true) {
+                    window.location.href = "../index.html";
+                }
+            });
+        </script>
+            
+        <h1 class="form-title">About Us</h1>
         <a href="../index.html">Home Page</a>
         <a href="Cars.html">Cars</a>
         <a href="Buy-car.html">Buy car</a>
         <a href="About-us.html">About Us</a>
         <a href="Contact-us.html">Contact Us</a>
         <a href="Mini games.html">Mini Game</a>
-    </div>
 
+        <section>
 
-    <footer>
-        <hr>
-        <p> &#169; Copyright 2023. All Rights Reserved.</p>
-    </footer>
+            <!-- Container displaying various salesperson with their images and descriptions -->
+            <div class="image-container">
+                <div>
+                    <a href="Buy-car.html">
+                        <img src="../Images/salesman1.png" class="sales-image">
+                    </a>
+                    <h3>Kevin Zhang</h3>
+                    <p>Kevin combines his tech-savvy skills with car sales, offering customers detailed insights into the vehicle's technical aspects. His expertise is particularly valuable when explaining car features and history to tech-conscious buyers.</p>
+                </div>
 
+                <div>
+                    <a href="Buy-car.html">
+                        <img src="../Images/salesman2.png" class="sales-image">
+                    </a>
+                    <h3>James Williams</h3>
+                    <p>With extensive experience, James is adept at appraising used cars and negotiating fair prices. His deep industry knowledge and ethical approach make him a reliable advisor to customers seeking quality second-hand vehicles.</p>
+                </div>
 
-</body>
+                <div>
+                    <a href="Buy-car.html">
+                        <img src="../Images/saleswoman1.png" class="sales-image">
+                    </a>
+                    <h3>Emily Parker</h3>
+                    <p>Emily's high-energy approach is effective in a competitive second-hand car market. She's quick at identifying customer needs and skilled in persuading them of the value and reliability of the cars she sells.</p>
+                </div>
+
+                <div>
+                    <a href="Buy-car.html">
+                        <img src="../Images/saleswoman2.png" class="sales-image">
+                    </a>
+                    <h3>Sophie Kim</h3>
+                    <p>Kim's ability to communicate across cultures is invaluable in a diverse market. She's proficient in matching customers with cars that suit their specific needs and budget, especially for clients from various cultural backgrounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <hr>
+            <p> &#169; Copyright 2023. All Rights Reserved.</p>
+        </footer>
+
+    </body>
 
 </html>

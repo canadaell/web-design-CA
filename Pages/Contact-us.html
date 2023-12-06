@@ -1,30 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/stylesheet.css">
-
+    <link href="../CSS/styles.css"  rel="stylesheet">
+    <style>
+              #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Contact Us</title>
 </head>
-
 <body>
-    <h1>Motor Legacy Ireland</h1>
-    <a href="../index.html">Home Page</a>
-    <a href="Cars.html">Cars</a>
-    <a href="Buy-car.html">Buy car</a>
-    <a href="About-us.html">About Us</a>
-    <a href="Contact-us.html">Contact Us</a>
-    <a href="Mini games.html">Mini Game</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-sm-2">
+            <a href="../index.html">
+            <img src="../Images/logo.png" class="img-fluid">
+            </a>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <h1 class="text-center"><b>How To Contact Us</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="../index.html">
+                    <div class="navi">
+                        <p>Home Page</p>
+                    </div>
+                </a>
+            </div>
+        
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="./Cars.html">
+                    <div class="navi">
+                        <p>Cars</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="./Buy-car.html">
+                    <div class="navi">
+                        <p>Buy Car</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="./About-us.html">
+                    <div class="navi">
+                        <p>About Us</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="./Contact-us.html">
+                    <div class="navi">
+                       <p>Contact Us</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <a class="link" href="./Mini games.html">
+                    <div class="navi">
+                        <p>Don't Crash</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <img src="../Images/Car_index.jpg">
+        </div>
+        <div class="table-responsive">
+        <table class="table table-striped table-dark table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Dublin</th>
+                <th scope="col">Galway</th>
+                <th scope="col">Cork</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Contact Number</th>
+                <td>087-32898392</td>
+                <td>081-98737221</td>
+                <td>089-37182933</td>
+              </tr>
+              <tr>
+                <th scope="row">Address</th>
+                <td>1 mount 3th Road Dublin1</td>
+                <td>2 mount 4th Avenue Galway2</td>
+                <td>3 Mount 8th Road Cork3</td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td>12312312@gmail.com</td>
+                <td>32131232@outlook.com</td>
+                <td>31231312@hotmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div id="map" style="height: 400px;"></div>
+          <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 53.349805, lng: -6.26031},
+                zoom: 8
+              });
+              var marker1 = new google.maps.Marker({
+                position: {lat: 53.349805, lng: -6.26031},
+                map: map,
+                title: 'Dublin'
+            });
 
-    <footer>
-        <hr>
-        <p> &#169; Copyright 2023. All Rights Reserved.</p>
-    </footer>
+            var marker2 = new google.maps.Marker({
+                position: {lat: 53.2707, lng: -9.0568},
+                map: map,
+                title: 'Galway'
+            });
 
-
+            var marker3 = new google.maps.Marker({
+                position: {lat: 51.8974, lng: -8.4706},
+                map: map,
+                title: 'Cork'
+            });
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwgJ6FHhE334VqUSM5E9_U8e0PMbtlW8&callback=initMap"
+          async defer></script>
+        <div class="row">
+            <hr>
+            <footer>
+                <p> &#169; Copyright 2023. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
 </body>
-
 </html>
