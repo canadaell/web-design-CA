@@ -113,3 +113,12 @@ modify navigation bar's links and delete underline
 footer {
     text-align: center;
 }
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.game-container {
+    text-align: center;
+}
+
