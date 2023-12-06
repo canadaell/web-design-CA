@@ -69,19 +69,26 @@
         <div class="row">
             <img src="../Images/Car_index.jpg">
         </div>
+    </div>
+    <div class="container game-container">
         <div class="row">
             <div class="col-12">
-                <canvas id="gameCanvas" style="border: 1px solid #000; background-color:  rgb(78, 82, 74);"></canvas>
-                <button onclick="startGame()">Start Game</button>
+                <canvas id="gameCanvas" width="400" height="600" style="border: 1px solid #000;"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" onclick="startGame()">Start Game</button>
                 <p>Score: <span id="score">0</span></p>
-                <select id="carSelect" onchange="changeCar()">
+                <select class="form-control" id="carSelect" onchange="changeCar()">
                     <option value="🚗">Car 1</option>
                     <option value="🚙">Car 2</option>
                     <option value="🏎️">Car 3</option>
                 </select>
-                
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
             <hr>
             <footer>
