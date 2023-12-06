@@ -23,12 +23,6 @@
 /* cars style */
 
 
-.cars {
-        display: block;
-        height: 100px;
-        width: 100px;
-
-}
 h2{
     font-family: 'Rokkitt', serif;
 }
@@ -38,14 +32,7 @@ h3{
 h4{
     font-family: 'Rokkitt', serif;
 }
-.catalogue {
-    float: left;
-    width: 85px;
-    padding: 4px;
-    padding-bottom: 3px;
 
-
-}
 
 
 
