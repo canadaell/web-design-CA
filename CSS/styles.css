@@ -1,3 +1,54 @@
+/* Index style */
+.brands img {
+    height: 200px;
+    width: 306px;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.brands {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Rokkitt', serif;
+    font-size:x-large;
+}
+
+.brands img:hover {
+    background-color: rgb(100, 105, 95);
+    transform: scale(1);
+}
+/* cars style */
+
+
+.cars {
+        display: block;
+        height: 100px;
+        width: 100px;
+
+}
+h2{
+    font-family: 'Rokkitt', serif;
+}
+h3{
+    font-family: 'Rokkitt', serif;
+}
+h4{
+    font-family: 'Rokkitt', serif;
+}
+.catalogue {
+    float: left;
+    width: 85px;
+    padding: 4px;
+    padding-bottom: 3px;
+
+
+}
+
+
+
 /* Buy car style */
 .container {
     max-width: 960px;
@@ -62,4 +113,3 @@ modify navigation bar's links and delete underline
 footer {
     text-align: center;
 }
-
