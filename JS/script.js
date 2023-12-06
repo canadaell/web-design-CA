@@ -84,27 +84,29 @@
 let canvas, ctx, car, obstacles, score, gameInterval;
 
 function startGame() {
-    canvas = document.getElementById("gameCanvas");
-    ctx = canvas.getContext("2d");
+  canvas = document.getElementById("gameCanvas");
+  ctx = canvas.getContext("2d");
 
-    // Adjust canvas size based on screen width
-    canvas.width = window.innerWidth * 0.8;
-    canvas.height = window.innerHeight * 0.8;
+  let col12Width = document.querySelector('.col-12').offsetWidth;
 
-    car = { x: canvas.width / 2 - 20, y: canvas.height - 50, width: 40, height: 40, symbol: "🚗" };
-    obstacles = [];
-    score = 0;
+  canvas.width = col12Width;
+  canvas.height = window.innerHeight * 0.8;
 
-    document.getElementById("score").innerText = score;
+  car = { x: col12Width / 2 - 20, y: canvas.height - 50, width: 40, height: 40, symbol: "🚗" };
+  obstacles = [];
+  score = 0;
 
-    gameInterval = setInterval(updateGame, 20);
+  document.getElementById("score").innerText = score;
 
-    // Listen for mouse movements
-    canvas.addEventListener("mousemove", moveCar);
+  gameInterval = setInterval(updateGame, 20);
 
-    // Disable the start button
-    document.querySelector("button").disabled = true;
+  // Listen for mouse movements
+  canvas.addEventListener("mousemove", moveCar);
+
+  // Disable the start button
+  document.querySelector("button").disabled = true;
 }
+
 
 function updateGame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
