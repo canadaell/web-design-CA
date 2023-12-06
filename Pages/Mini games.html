@@ -71,7 +71,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <canvas id="gameCanvas" style="border: 1px solid #000;"></canvas>
+                <canvas id="gameCanvas" style="border: 1px solid #000; background-color:  rgb(78, 82, 74);"></canvas>
             </div>
         </div>
         <div class="row">
@@ -81,5 +81,26 @@
             </footer>
         </div>
     </div>
+    <script>
+        class Car {
+            constructor(x, y, carType) {
+                this.x = x;
+                this.y = y;
+                this.carType = carType;
+            }
+            draw() {
+                const canvas = document.getElementById('gameCanvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'blue';
+                ctx.fillRect(this.x, this.y, 30, 20);
+            }
+        }   
+        class Obstacle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+            }
+        }
+    </script>
 </body>
 </html>
