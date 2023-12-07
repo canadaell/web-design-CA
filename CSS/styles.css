@@ -9,36 +9,35 @@
     margin-right: auto;
     padding: 5px;
 }
+
 .brands {
     display: inline-block;
     text-align: center;
     font-family: 'Rokkitt', serif;
-    font-size:x-large;
+    font-size: x-large;
 }
 
 .brands img:hover {
     background-color: rgb(100, 105, 95);
     transform: scale(1);
 }
+
 /* cars style */
-
-
-h2{
-    font-family: 'Rokkitt', serif;
-}
-h3{
-    font-family: 'Rokkitt', serif;
-}
-h4{
+h2 {
     font-family: 'Rokkitt', serif;
 }
 
+h3 {
+    font-family: 'Rokkitt', serif;
+}
 
-
+h4 {
+    font-family: 'Rokkitt', serif;
+}
 
 /* Buy car style */
 .container {
-    max-width: 960px;
+    max-width: 970px;
 }
 
 /* About us style */
@@ -50,13 +49,12 @@ h4{
 }
 
 .sales-image {
-    width: 200px;
+    max-width: 100%;
     height: auto;
-    margin: 10px;
 }
 
 .image-container {
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -65,6 +63,18 @@ h4{
     /* Centers items horizontally */
     text-align: center;
     /* Centers the text */
+}
+
+.form-title {
+    text-align: center;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /*
@@ -92,11 +102,10 @@ modify navigation bar's links and delete underline
     color: #ffffff;
 }
 
-
-
 footer {
     text-align: center;
 }
+
 canvas {
     display: block;
     margin: 0 auto;
@@ -108,8 +117,9 @@ canvas {
     padding-right: 0;
 }
 
-.col-md-2, .navi, .img{
+.col-md-2,
+.navi,
+.img {
     padding-left: 0;
     padding-right: 0;
 }
-
