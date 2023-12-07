@@ -42,7 +42,30 @@ h4{
 }
 
 /* About us style */
+.sales-image:hover {
+    transform: scale(1.1);
+    /* Enlarge the image on hover */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the transform */
+}
 
+.sales-image {
+    width: 350px;
+    height: auto;
+    margin: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    /* Adds some space below each container */
+    align-items: center;
+    /* Centers items horizontally */
+    text-align: center;
+    /* Centers the text */
+}
 
 /*
 navigation bar
