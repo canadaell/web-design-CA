@@ -92,10 +92,7 @@ modify navigation bar's links and delete underline
     color: #ffffff;
 }
 
-.row {
-    align-items: center;
-    display: flex;
-}
+
 
 footer {
     text-align: center;
