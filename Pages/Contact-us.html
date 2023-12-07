@@ -20,12 +20,19 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-1 col-sm-2">
-            <a href="../index.html">
-            <img src="../Images/logo.png" class="img-fluid">
-            </a>
+            <div class="col-md-1">
+                <img src="../Images/logo.png" class="img-fluid" id="homeIcon">
             </div>
         </div>
+
+        <script>
+            document.getElementById("homeIcon").addEventListener("click", function () {
+                var r = confirm("Do you want to return to the home page?");
+                if (r == true) {
+                    window.location.href = "../index.html";
+                }
+            });
+        </script>
         <div class="row">
             <div>
                 <h1 class="text-center"><b>How To Contact Us</b></h1>
