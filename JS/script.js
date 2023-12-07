@@ -89,7 +89,7 @@ function startGame() {
 
   let col12Width = document.querySelector('.col-12').offsetWidth;
 
-  canvas.width = col12Width;
+  canvas.width = col12Width * 0.9;
   canvas.height = window.innerHeight * 0.8;
 
   car = { x: col12Width / 2 - 20, y: canvas.height - 50, width: 40, height: 40, symbol: "🚗" };
