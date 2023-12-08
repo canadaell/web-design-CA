@@ -34,22 +34,17 @@ ul {
 }
 
 
-h4, p {
+h4,
+p {
     margin-top: 0;
 }
 
 .price {
     font-weight: bold;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
-h2{
-    font-family: 'Rokkitt', serif;
-}
-h3{
-    font-family: 'Rokkitt', serif;
-}
-h4{
+h2 {
     font-family: 'Rokkitt', serif;
 }
 
@@ -61,11 +56,20 @@ h4 {
     font-family: 'Rokkitt', serif;
 }
 
-#Brandcars{
+h3 {
+    font-family: 'Rokkitt', serif;
+}
+
+h4 {
+    font-family: 'Rokkitt', serif;
+}
+
+#Brandcars {
     background-color: rgb(233, 233, 218);
     text-align: center;
 
 }
+
 /* Buy car style */
 .container {
     max-width: 970px;
@@ -108,11 +112,17 @@ h4 {
     margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-body, p {
+body,
+p {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -130,7 +140,7 @@ navigation bar
 
 .navi:hover {
     background-color: rgb(100, 105, 95);
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 /*
