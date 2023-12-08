@@ -163,11 +163,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1">
-                <a href="../index.html">
-                    <img src="../Images/logo.png" class="img-fluid" alt="">
-                </a>
+                <img src="../Images/logo.png" class="img-fluid" id="homeIcon" alt="">
             </div>
         </div>
+
+        <script>
+            document.getElementById("homeIcon").addEventListener("click", function () {
+                var r = confirm("Do you want to return to the home page?");
+                if (r == true) {
+                    window.location.href = "../index.html";
+                }
+            });
+        </script>
+
         <div class="row">
             <div>
                 <h1 class="text-center"><b>Team Story</b></h1>
