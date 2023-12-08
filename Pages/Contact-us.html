@@ -20,19 +20,26 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-1 col-sm-2">
-            <a href="../index.html">
-            <img src="../Images/logo.png" class="img-fluid">
-            </a>
+            <div class="col-md-1">
+                <img src="../Images/logo.png" class="img-fluid" id="homeIcon">
             </div>
         </div>
+
+        <script>
+            document.getElementById("homeIcon").addEventListener("click", function () {
+                var r = confirm("Do you want to return to the home page?");
+                if (r == true) {
+                    window.location.href = "../index.html";
+                }
+            });
+        </script>
         <div class="row">
             <div>
                 <h1 class="text-center"><b>How To Contact Us</b></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="../index.html">
                     <div class="navi">
                         <p>Home Page</p>
@@ -40,35 +47,35 @@
                 </a>
             </div>
         
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="./Cars.html">
                     <div class="navi">
                         <p>Cars</p>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="./Buy-car.html">
                     <div class="navi">
                         <p>Buy Car</p>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="./About-us.html">
                     <div class="navi">
                         <p>About Us</p>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="./Contact-us.html">
                     <div class="navi">
                        <p>Contact Us</p>
                     </div>
                 </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="col-md-2">
                 <a class="link" href="./Mini games.html">
                     <div class="navi">
                         <p>Don't Crash</p>
@@ -76,6 +83,7 @@
                 </a>
             </div>
         </div>
+        <hr>
         <div class="row">
             <img src="../Images/Car_index.jpg">
         </div>
@@ -140,12 +148,22 @@
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIwgJ6FHhE334VqUSM5E9_U8e0PMbtlW8&callback=initMap"
           async defer></script>
+          <br>
         <div class="row">
             <hr>
             <footer>
                 <p> &#169; Copyright 2023. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Support</a></li>
+                </ul>
             </footer>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
