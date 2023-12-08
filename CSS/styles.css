@@ -38,22 +38,17 @@ ul {
 }
 
 
-h4, p {
+h4,
+p {
     margin-top: 0;
 }
 
 .price {
     font-weight: bold;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
 
-h2{
-    font-family: 'Rokkitt', serif;
-}
-h3{
-    font-family: 'Rokkitt', serif;
-}
-h4{
+h2 {
     font-family: 'Rokkitt', serif;
 }
 
@@ -65,7 +60,15 @@ h4 {
     font-family: 'Rokkitt', serif;
 }
 
-#Brandcars{
+h3 {
+    font-family: 'Rokkitt', serif;
+}
+
+h4 {
+    font-family: 'Rokkitt', serif;
+}
+
+#Brandcars {
     background-color: rgb(233, 233, 218);
     text-align: center;
 
@@ -84,7 +87,7 @@ h4 {
 
 /* About us style */
 .sales-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     /* Enlarge the image on hover */
     transition: transform 0.3s ease;
     /* Smooth transition for the transform */
@@ -119,6 +122,20 @@ h4 {
     margin-bottom: 20px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body,
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /*
 navigation bar
 */
@@ -133,7 +150,7 @@ navigation bar
 
 .navi:hover {
     background-color: rgb(100, 105, 95);
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 /*
