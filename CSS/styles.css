@@ -22,6 +22,10 @@
     transform: scale(1);
 }
 
+#IndexPage {
+    background-image: url(../Images/Background.jpg);
+}
+
 /* cars style */
 
 
@@ -66,6 +70,13 @@ h4 {
     text-align: center;
 
 }
+
+.Catalogue:hover{
+    background-color: rgb(100, 105, 95);
+    transform: scale(0.94);
+}
+
+
 /* Buy car style */
 .container {
     max-width: 970px;
