@@ -73,7 +73,7 @@ h4 {
 
 /* About us style */
 .sales-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     /* Enlarge the image on hover */
     transition: transform 0.3s ease;
     /* Smooth transition for the transform */
