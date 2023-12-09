@@ -198,7 +198,7 @@ window.addEventListener("resize", function () {
 add confirm box at every "buy me" button in cars pages
 Author: Mingde Zhou
 */
-document.getElementById("buyMe").addEventListener("click", function () {
+document.getElementsByClassName("buyMe").addEventListener("click", function () {
   let r = confirm("Are you sure to buy this car?");
   if (r == true) {
     window.location.href = "Buy-Car.html";
