@@ -197,16 +197,19 @@ window.addEventListener("resize", function () {
 
 
 /*
-add confirm box at every "buy me" button in cars pages
+add confirm box on every images in cars pages
 Author: Mingde Zhou
-
-document.getElementById("buyMe").addEventListener("click", function () {
-  let r = confirm("Are you sure to buy this car?");
-  if (r == true) {
-    window.location.href = "Buy-Car.html";
-  }
-});
 */
+var clickableImages = document.getElementsByClassName('buyMeIMG');
+for (var i = 0; i < clickableImages.length; i++) {
+    clickableImages[i].addEventListener('click', function() {
+        var isConfirmed = confirm('Do you want to go to the second page?');
+        if (isConfirmed) {
+            window.location.href = 'Buy-car.html';
+        }
+    });
+}
+
 
 /*
 Debug for each button functional.
