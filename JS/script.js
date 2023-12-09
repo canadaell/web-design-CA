@@ -194,3 +194,13 @@ window.addEventListener("resize", function () {
     startGame(); // Restart the game with updated canvas size
   }
 });
+/*
+add confirm box at every "buy me" button in cars pages
+Author: Mingde Zhou
+*/
+document.getElementById("buyMe").addEventListener("click", function () {
+  let r = confirm("Are you sure to buy this car?");
+  if (r == true) {
+    window.location.href = "../index.html";
+  }
+});
