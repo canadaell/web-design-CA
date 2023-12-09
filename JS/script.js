@@ -204,3 +204,16 @@ document.getElementById("buyMe").addEventListener("click", function () {
     window.location.href = "Buy-Car.html";
   }
 });
+
+/*
+Debug for each button functional.
+Author: Diwen Xiao
+*/
+document.querySelectorAll('.buyMe').forEach(button => {
+  button.addEventListener('click', function() {
+    let r = confirm("Are you sure to buy this car?");
+    if (r == true) {
+      window.location.href = "Buy-Car.html";
+    }
+  });
+});
