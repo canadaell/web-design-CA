@@ -197,20 +197,21 @@ window.addEventListener("resize", function () {
 /*
 add confirm box at every "buy me" button in cars pages
 Author: Mingde Zhou
-*/
+
 document.getElementById("buyMe").addEventListener("click", function () {
   let r = confirm("Are you sure to buy this car?");
   if (r == true) {
     window.location.href = "Buy-Car.html";
   }
 });
+*/
 
 /*
 Debug for each button functional.
 Author: Diwen Xiao
 */
 document.querySelectorAll('.buyMe').forEach(button => {
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     let r = confirm("Are you sure to buy this car?");
     if (r == true) {
       window.location.href = "Buy-Car.html";

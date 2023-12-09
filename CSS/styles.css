@@ -27,7 +27,6 @@
 
 /* cars style */
 
-
 ul {
     clear: left;
 }
@@ -41,10 +40,12 @@ ul {
     font-size: 1.2em;
 }
 
-h2, h3, h4, h5{
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Rokkitt', serif;
 }
-
 
 .Brandcars {
     background-color: rgb(233, 233, 218);
@@ -52,7 +53,7 @@ h2, h3, h4, h5{
 
 }
 
-.Catalogue:hover{
+.Catalogue:hover {
     background-color: rgb(100, 105, 95);
     transform: scale(0.94);
 }
@@ -100,7 +101,7 @@ h2, h3, h4, h5{
     margin-bottom: 20px;
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
 }
 
