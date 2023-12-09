@@ -96,7 +96,9 @@
 })()
 
 
-//mini game
+/*mini game
+Author: Mingde Zhou
+*/
 let canvas, ctx, car, obstacles, score, gameInterval;
 
 function startGame() {
