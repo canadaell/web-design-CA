@@ -194,6 +194,8 @@ window.addEventListener("resize", function () {
     startGame(); // Restart the game with updated canvas size
   }
 });
+
+
 /*
 add confirm box at every "buy me" button in cars pages
 Author: Mingde Zhou
