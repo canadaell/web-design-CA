@@ -15,10 +15,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-1">
-                <img src="../Images/logo.png" class="img-fluid" id="homeIcon" alt="">
+                <a href="./index.html">
+                    <img src="./Images/logo.png" id="homeIcon"class="img-fluid" alt="logo">
+                </a>
             </div>
         </div>
-
         <script>
             document.getElementById("homeIcon").addEventListener("click", function () {
                 var r = confirm("Do you want to return to the home page?");
@@ -26,7 +27,7 @@
                     window.location.href = "../index.html";
                 }
             });
-        </script>
+        </script><!--Author:Diwen Xiao. when user click the logo, ask the user wether he would jump into index page, if yes, jump to index page-->
         <div class="row">
             <div>
                 <h1 class="text-center"><b>Don't Crash!</b></h1>
