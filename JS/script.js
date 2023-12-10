@@ -204,9 +204,7 @@ var clickableImages = document.getElementsByClassName('buyMeIMG');
 for (var i = 0; i < clickableImages.length; i++) {
     clickableImages[i].addEventListener('click', function() {
         var isConfirmed = confirm('Do you want to buy this car?');
-        if (isConfirmed) {
-            window.location.href = 'Buy-car.html';
-        }
+        if 
     });
 }
 
